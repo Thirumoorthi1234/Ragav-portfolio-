@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ragavendhiran R | Portfolio</title>
+  <meta name="description" content="Portfolio of Ragavendhiran R - B.Sc IT Graduate passionate about MERN stack development."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Magical Particle Canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Floating Orbs Background -->
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+  <div class="orb orb4"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-r">R</span><span class="logo-text">agav</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <div class="hero-badge animate-in delay-1">✨ Welcome to my Portfolio</div>
+      <h1 class="hero-title animate-in delay-2">
+        <span class="hero-name">Ragavendhiran</span>
+        <span class="hero-lastname"> R</span>
+      </h1>
+      <p class="hero-subtitle animate-in delay-3">
+        <span class="typewriter" id="typewriter"></span><span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-desc animate-in delay-4">
+        Seeking challenging opportunities to fully utilize my skills, expand my knowledge, and deliver innovative solutions.
+      </p>
+      <div class="hero-cta animate-in delay-5">
+        <a href="#projects" class="btn btn-primary">
+          <span>View Projects</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+      <div class="hero-stats animate-in delay-5">
+        <div class="stat-item">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">1+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">7.7</span>
+          <span class="stat-label">CGPA</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual animate-in delay-3">
+      <div class="avatar-container">
+        <div class="avatar-ring ring1"></div>
+        <div class="avatar-ring ring2"></div>
+        <div class="avatar-ring ring3"></div>
+        <div class="avatar-glow"></div>
+        <div class="avatar-inner">
+          <div class="avatar-initials">RR</div>
+        </div>
+        <!-- Floating skill badges -->
+        <div class="skill-badge badge-html">HTML5</div>
+        <div class="skill-badge badge-css">CSS3</div>
+        <div class="skill-badge badge-js">JS</div>
+        <div class="skill-badge badge-sql">SQL</div>
+        <div class="skill-badge badge-mern">MERN</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card reveal">
+          <div class="about-icon">🎯</div>
+          <h3>Objective</h3>
+          <p>Seeking challenging opportunities in a reputed organization where I can fully use my skills for the success of the organization and expand my knowledge and leverage my learnings.</p>
+        </div>
+        <div class="about-card glass-card reveal delay-1">
+          <div class="about-icon">💡</div>
+          <h3>Interests</h3>
+          <p>Passionate about the <strong>MERN Stack</strong> — building full-stack web applications with MongoDB, Express.js, React, and Node.js to create seamless digital experiences.</p>
+        </div>
+        <div class="about-card glass-card reveal delay-2">
+          <div class="about-icon">🌏</div>
+          <h3>Personal</h3>
+          <p>Date of Birth: <strong>18th November 2003</strong><br/>
+             Nationality: <strong>Indian</strong><br/>
+             Languages: <strong>English, Tamil, Telugu</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Education <span class="highlight">Timeline</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-year">2021 – 2024</div>
+            <div class="timeline-body">
+              <h3>B.Sc Information Technology</h3>
+              <p class="institution">🏫 Karpagam Academy of Higher Education</p>
+              <div class="score-badge">CGPA: 7.7%</div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-year">2020 – 2021</div>
+            <div class="timeline-body">
+              <h3>Higher Secondary Certificate (HSC)</h3>
+              <p class="institution">🏫 Paramveer Banasingh Vidhya Academy of Higher Education</p>
+              <div class="score-badge">Score: 81%</div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-year">2018 – 2019</div>
+            <div class="timeline-body">
+              <h3>Secondary School Leaving Certificate (SSLC)</h3>
+              <p class="institution">🏫 Aadhiyaman Matric Hr. Secondary (State Board)</p>
+              <div class="score-badge">Score: 80%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skills-col reveal">
+          <h3 class="skills-category">💻 Technical Skills</h3>
+          <div class="skill-item-wrap">
+            <div class="skill-label-row"><span>HTML5</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85" style="--w:85%"></div></div>
+          </div>
+          <div class="skill-item-wrap">
+            <div class="skill-label-row"><span>CSS3</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80" style="--w:80%"></div></div>
+          </div>
+          <div class="skill-item-wrap">
+            <div class="skill-label-row"><span>JavaScript</span><span>75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75" style="--w:75%"></div></div>
+          </div>
+          <div class="skill-item-wrap">
+            <div class="skill-label-row"><span>SQL</span><span>82%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="82" style="--w:82%"></div></div>
+          </div>
+          <div class="skill-item-wrap">
+            <div class="skill-label-row"><span>MS Office</span><span>78%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="78" style="--w:78%"></div></div>
+          </div>
+        </div>
+        <div class="skills-col reveal delay-1">
+          <h3 class="skills-category">🌟 Soft Skills</h3>
+          <div class="soft-skills-wrap">
+            <div class="soft-skill glass-card">
+              <div class="soft-icon">🤝</div>
+              <span>Adaptability</span>
+            </div>
+            <div class="soft-skill glass-card">
+              <div class="soft-icon">👥</div>
+              <span>Teamwork</span>
+            </div>
+            <div class="soft-skill glass-card">
+              <div class="soft-icon">🔄</div>
+              <span>Flexibility</span>
+            </div>
+          </div>
+          <h3 class="skills-category" style="margin-top:2rem;">🗣️ Languages</h3>
+          <div class="lang-chips">
+            <span class="lang-chip">🇬🇧 English</span>
+            <span class="lang-chip">🌺 Tamil</span>
+            <span class="lang-chip">🔱 Telugu</span>
+          </div>
+          <h3 class="skills-category" style="margin-top:2rem;">🛠️ Tech Stack</h3>
+          <div class="tech-tags">
+            <span class="tech-tag">MERN Stack</span>
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card glass-card reveal">
+          <div class="project-header">
+            <div class="project-icon">🏥</div>
+            <div class="project-links">
+              <span class="project-badge">Healthcare</span>
+            </div>
+          </div>
+          <h3 class="project-title">Doctor Appointment Schedule System</h3>
+          <p class="project-desc">
+            Designed and implemented a doctor appointment scheduling system with real-time availability tracking, automated reminders, and calendar synchronization. Enabled patients to book, reschedule, or cancel appointments online, improving efficiency and user experience. Ensured secure data handling and compliance with healthcare standards.
+          </p>
+          <div class="project-features">
+            <span class="feature-tag">✅ Real-time Tracking</span>
+            <span class="feature-tag">🔔 Auto Reminders</span>
+            <span class="feature-tag">📅 Calendar Sync</span>
+            <span class="feature-tag">🔒 Secure Data</span>
+          </div>
+          <div class="project-tech">
+            <span>SQL</span><span>HTML</span><span>CSS</span><span>JS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Achievements</span>
+        <h2 class="section-title">My <span class="highlight">Certifications</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card glass-card reveal">
+          <div class="cert-badge">🏅</div>
+          <div class="cert-body">
+            <h3>SQL (Basic) Standard Course</h3>
+            <p class="cert-issuer">Skillrack</p>
+          </div>
+          <div class="cert-shine"></div>
+        </div>
+        <div class="cert-card glass-card reveal delay-1">
+          <div class="cert-badge">🎖️</div>
+          <div class="cert-body">
+            <h3>SQL Programming Course</h3>
+            <p class="cert-issuer">LinkedIn Learning</p>
+          </div>
+          <div class="cert-shine"></div>
+        </div>
+        <div class="cert-card glass-card reveal delay-2">
+          <div class="cert-badge">🌟</div>
+          <div class="cert-body">
+            <h3>Volunteer Service</h3>
+            <p class="cert-issuer">Government Schemes Camp</p>
+          </div>
+          <div class="cert-shine"></div>
+        </div>
+        <div class="cert-card glass-card reveal delay-3">
+          <div class="cert-badge">🏆</div>
+          <div class="cert-body">
+            <h3>SQL Basics Assessment</h3>
+            <p class="cert-issuer">HackerRank</p>
+          </div>
+          <div class="cert-shine"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-intro">I'm open to new opportunities and collaborations. Feel free to reach out!</p>
+          <div class="contact-items">
+            <a href="tel:+916384948318" class="contact-item glass-card">
+              <div class="contact-icon">📱</div>
+              <div>
+                <span class="contact-label">Phone</span>
+                <span class="contact-val">+91 63849 48318</span>
+              </div>
+            </a>
+            <a href="mailto:ragavenraja1811@gmail.com" class="contact-item glass-card">
+              <div class="contact-icon">📧</div>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-val">ragavenraja1811@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/ragavendhiran-r-0113b1254" target="_blank" rel="noopener" class="contact-item glass-card">
+              <div class="contact-icon">💼</div>
+              <div>
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-val">ragavendhiran-r-0113b1254</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal delay-1">
+          <form class="contact-form glass-card" id="contactForm">
+            <h3>Send a Message</h3>
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required/>
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your Email" required/>
+              <label for="email">Your Email</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+              <label for="message">Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary form-btn">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-r">R</span><span class="logo-text">agavendhiran R</span>
+      </div>
+      <p class="footer-tagline">✨ Crafted with passion & code</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">© 2024 Ragavendhiran R. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
